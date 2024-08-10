@@ -16,6 +16,7 @@ We provide baseline DeiT models pretrained on ImageNet 2012.
 |---------------------------------------|-------|------|---------|------------------------|
 | ZoomViT-small-ZF2                     | 83.8  | 96.9 | 22.7M   | [Baidu Netdisk](https://pan.baidu.com/s/1V-E5rMBkV16L5pEGw-Vs0Q?pwd=heji) |
 | ZoomViT-small-ZF0.5                   | 81.5  | 95.7 | 22.7M   | [Baidu Netdisk](https://pan.baidu.com/s/1Q1BtI0kNA3kdp9t6KLKb4w?pwd=28zg) |
+| Zoomer                   | -  | - | -   | [Baidu Netdisk](https://pan.baidu.com/s/1YibKamJqV73TXa_s1BJfxA?pwd=6k51) |
 
 ## Data preparation
 
