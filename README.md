@@ -6,8 +6,6 @@ They obtain competitive tradeoffs in terms of speed / precision:
 
 ![ZoomViT](ZoomViT.png)
 
-If you use this code for a paper please cite:
-
 
 
 # Model Zoo
