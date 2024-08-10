@@ -4,7 +4,7 @@ This repository contains PyTorch evaluation code, training code and pretrained m
 
 They obtain competitive tradeoffs in terms of speed / precision:
 
-![ZoomViT](.github/ZoomViT.png)
+![ZoomViT](ZoomViT.png)
 
 If you use this code for a paper please cite:
 
