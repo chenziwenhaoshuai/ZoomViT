@@ -1,27 +1,22 @@
-# Vision Transformers Need Zoomer: Efficient Vision Transformers with Local Zooming
+# Vision Transformers Need Zoomer: Efficient Vision Transformers with Local Zooming 🌟
 
-This repository contains PyTorch evaluation code, training code and pretrained models for the following projects:
-
-They obtain competitive tradeoffs in terms of speed / precision:
+Welcome to **Vision Transformers Need Zoomer**! This repository contains PyTorch evaluation and training code, along with pretrained models for our innovative projects. Our models achieve impressive trade-offs in speed and precision, making them suitable for a variety of applications. 🚀
 
 ![ZoomViT](ZoomViT.png)
 
+## Model Zoo 🦙
 
+Explore our baseline **DeiT** models pretrained on ImageNet 2012:
 
-# Model Zoo
+| Model Name                           | Acc@1 | Acc@5 | Parameters | Download Link                                   |
+|--------------------------------------|-------|-------|------------|-------------------------------------------------|
+| ZoomViT-small-ZF2                    | 83.8  | 96.9  | 22.7M      | [Baidu Netdisk](https://pan.baidu.com/s/1V-E5rMBkV16L5pEGw-Vs0Q?pwd=heji) |
+| ZoomViT-small-ZF0.5                  | 81.5  | 95.7  | 22.7M      | [Baidu Netdisk](https://pan.baidu.com/s/1Q1BtI0kNA3kdp9t6KLKb4w?pwd=28zg) |
+| Zoomer                                | -     | -     | -          | [Baidu Netdisk](https://pan.baidu.com/s/1YibKamJqV73TXa_s1BJfxA?pwd=6k51) |
 
-We provide baseline DeiT models pretrained on ImageNet 2012.
+## Data Preparation 📂
 
-| name                                  | acc@1 | acc@5 | #params | url                    |
-|---------------------------------------|-------|------|---------|------------------------|
-| ZoomViT-small-ZF2                     | 83.8  | 96.9 | 22.7M   | [Baidu Netdisk](https://pan.baidu.com/s/1V-E5rMBkV16L5pEGw-Vs0Q?pwd=heji) |
-| ZoomViT-small-ZF0.5                   | 81.5  | 95.7 | 22.7M   | [Baidu Netdisk](https://pan.baidu.com/s/1Q1BtI0kNA3kdp9t6KLKb4w?pwd=28zg) |
-| Zoomer                   | -  | - | -   | [Baidu Netdisk](https://pan.baidu.com/s/1YibKamJqV73TXa_s1BJfxA?pwd=6k51) |
-
-## Data preparation
-
-Download and extract ImageNet train and val images from http://image-net.org/.
-The directory structure is the standard layout for the torchvision [`datasets.ImageFolder`](https://pytorch.org/docs/stable/torchvision/datasets.html#imagefolder), and the training and validation data is expected to be in the `train/` folder and `val` folder respectively:
+To get started, download and extract the ImageNet training and validation images from [ImageNet](http://image-net.org/). Organize your directory as follows, which is compatible with the torchvision [`datasets.ImageFolder`](https://pytorch.org/docs/stable/torchvision/datasets.html#imagefolder):
 
 ```
 /path/to/imagenet/
@@ -37,30 +32,40 @@ The directory structure is the standard layout for the torchvision [`datasets.Im
       img4.jpeg
 ```
 
-## Evaluation
-To evaluate a pre-trained DeiT-small-ZF2 on ImageNet val with a single GPU run:
-```
+## Evaluation 🔍
+
+To evaluate the pretrained **DeiT-small-ZF2** on the ImageNet validation set with a single GPU, run:
+
+```bash
 python main.py --eval --resume output/best_checkpoint_zf2.pth --data-path /path/to/imagenet
 ```
-This should give
+
+This should yield the following results:
+
 ```
-* Acc@1 83.816 Acc@5 96.928 loss 0.618
+* Acc@1: 83.816  Acc@5: 96.928  Loss: 0.618
 ```
 
-For Deit-small-ZF0.5, run:
-```
-python main.py --eval --resume output/best_checkpoint_zf.5.pth --data-path /path/to/imagenet
-```
-giving
-```
-* Acc@1 81.480 Acc@5 95.742 loss 0.730
-```
-## Train
-The training framework for Zoomer will be released later!
+For **DeiT-small-ZF0.5**, execute:
 
+```bash
+python main.py --eval --resume output/best_checkpoint_zf0.5.pth --data-path /path/to/imagenet
+```
 
-# License
-This repository is released under the Apache 2.0 license.
+And expect:
 
-# Contributing
-We actively welcome your pull requests!  for more info.
+```
+* Acc@1: 81.480  Acc@5: 95.742  Loss: 0.730
+```
+
+## Training ⚙️
+
+Stay tuned! The training framework for **Zoomer** will be released soon. 
+
+## License 📜
+
+This repository is released under the **Apache 2.0 license**.
+
+## Contributing 🤝
+
+We actively welcome your contributions! If you're interested in improving the project, feel free to submit pull requests. For more information, check our contributing guidelines.
