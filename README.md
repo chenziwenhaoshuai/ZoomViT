@@ -68,4 +68,4 @@ This repository is released under the **Apache 2.0 license**.
 
 ## Contributing 🤝
 
-We actively welcome your contributions! If you're interested in improving the project, feel free to submit pull requests. For more information, check our contributing guidelines.
+We actively welcome your contributions! If you're interested in improving the project, feel free to submit pull requests. For more information, check our contributing guidelines！
